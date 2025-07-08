@@ -5,10 +5,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veles - Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./cardImage.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <div id="head-background"></div>
+        <div id="head-img">
+            <picture>
+                <source srcset="./imgs/veles-rgb-mobile.png" media="(max-width: 599px)" />
+                <source srcset="./imgs/veles-rgb-tablet.png" media="(max-width: 999px)" />
+                <img src="./imgs/veles-rgb.png" alt="veles-rgb, Fullstack Web Developer" />
+            </picture>
+            <div id="overlay-text">VELES-RGB</div>
+        </div>
+        <div id="about-me">
+            <h1 id="about-me-title">About Me</h1>
+            <div id="about-me-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam reiciendis odio et
+                esse nobis alias ipsum, neque necessitatibus ducimus veritatis, cumque aut doloremque unde illum veniam
+                laudantium possimus saepe voluptatum.</div>
+            <div id="about-me-links">
+                <div class="about-me-icon"><a href="https://github.com/veles-rgb" target="_blank"
+                        rel="noopener noreferrer"><img src="./imgs/github-original.svg" alt="Github" width="25px"></a>
+                </div>
+                <div class="about-me-icon"><img src="./imgs/linkedin-plain.svg" alt="Linked-in" width="25px"></div>
+                <div class="about-me-icon"><img src="./imgs/twitter-original.svg" alt="X.com" width="25px"></div>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <div id="main-title">
+            <h1>Projects</h1>
+        </div>
+
+        <div id="main-container">
+            <div class="main-card">
+                <div class="card-image">1</div>
+                <div class="card-info">
+                    <div class="card-info-name">Project 1</div>
+                    <div class="card-info-icons">
+                        <img class="card-icon" src="./imgs/github-original.svg" alt="Github source" width="23px">
+                        <img class="card-icon" src="./imgs/share-circle.svg" alt="Share" width="25px">
+                    </div>
+                </div>
+                <div class="card-desc">Short description of the project. Just a couple of sentences will do.</div>
+            </div>
+
+            <div class="main-card">
+                <div class="card-image">2</div>
+                <div class="card-info">
+                    <div class="card-info-name">Project 2</div>
+                    <div class="card-info-icons">
+                        <img class="card-icon" src="./imgs/github-original.svg" alt="Github source" width="23px">
+                        <img class="card-icon" src="./imgs/share-circle.svg" alt="Share" width="25px">
+                    </div>
+                </div>
+                <div class="card-desc">Short description of the project. Just a couple of sentences will do.</div>
+            </div>
+
+            <div class="main-card">
+                <div class="card-image">3</div>
+                <div class="card-info">
+                    <div class="card-info-name">Project 3</div>
+                    <div class="card-info-icons">
+                        <img class="card-icon" src="./imgs/github-original.svg" alt="Github source" width="23px">
+                        <img class="card-icon" src="./imgs/share-circle.svg" alt="Share" width="25px">
+                    </div>
+                </div>
+                <div class="card-desc">Short description of the project. Just a couple of sentences will do.</div>
+            </div>
+
+            <div class="main-card">
+                <div class="card-image">4</div>
+                <div class="card-info">
+                    <div class="card-info-name">Project 4</div>
+                    <div class="card-info-icons">
+                        <img class="card-icon" src="./imgs/github-original.svg" alt="Github source" width="23px">
+                        <img class="card-icon" src="./imgs/share-circle.svg" alt="Share" width="25px">
+                    </div>
+                </div>
+                <div class="card-desc">Short description of the project. Just a couple of sentences will do.</div>
+            </div>
+
+            <div class="main-card">
+                <div class="card-image">5</div>
+                <div class="card-info">
+                    <div class="card-info-name">Project 5</div>
+                    <div class="card-info-icons">
+                        <img class="card-icon" src="./imgs/github-original.svg" alt="Github source" width="23px">
+                        <img class="card-icon" src="./imgs/share-circle.svg" alt="Share" width="25px">
+                    </div>
+                </div>
+                <div class="card-desc">Short description of the project. Just a couple of sentences will do.</div>
+            </div>
+
+            <div class="main-card">
+                <div class="card-image">6</div>
+                <div class="card-info">
+                    <div class="card-info-name">Project 6</div>
+                    <div class="card-info-icons">
+                        <img class="card-icon" src="./imgs/github-original.svg" alt="Github source" width="23px">
+                        <img class="card-icon" src="./imgs/share-circle.svg" alt="Share" width="25px">
+                    </div>
+                </div>
+                <div class="card-desc">Short description of the project. Just a couple of sentences will do.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-info">
+            <div id="footer-title">
+                <h2>Contact me</h2>
+            </div>
+            <div id="footer-text">
+                <p>Please reach out if you think we could work together!</p>
+            </div>
+            <div id="footer-addy">
+                <div class="addy-text">999 RGB Lane</div>
+                <div class="addy-text">City, Somewhere 99999</div>
+            </div>
+            <div id="footer-tele">
+                <div class="contact-icon"><img src="./imgs/phone.svg" alt="Phone Icon" width="25px"></div>
+                <div class="contact-info">999-999-9999</div>
+            </div>
+            <div id="footer-email">
+                <div class="contact-icon"><img src="./imgs/email.svg" alt="Email Icon" width="25px"></div>
+                <div class="contact-info">veles@rgb.com</div>
+            </div>
+            <div id="footer-icons">
+                <div><img src="./imgs/github-original.svg" alt="Github icon" width="30px"></div>
+                <div><img src="./imgs/linkedin-plain.svg" alt="Linked-in icon" width="30px"></div>
+                <div><img src="./imgs/twitter-original.svg" alt="X.com icon" width="30px"></div>
+            </div>
+        </div>
+        <div id="footer-img">
+            <picture>
+                <source srcset="./imgs/footer-mobile.jpg" media="(max-width: 599px)" />
+                <source srcset="./imgs/footer-tablet.jpg" media="(max-width: 999px)" />
+                <img src="./imgs/footer.jpg" alt="Smiley face etched into a foggy window" />
+            </picture>
+        </div>
+    </footer>
 </body>
 
 </html>
